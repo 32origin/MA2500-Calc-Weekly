@@ -59,6 +59,14 @@ def main():
             else:
                 judge="*1.2"
             tilt="今日沪指高于"+judge+"线"
+            if judge =="÷1.2":
+                tilt = tilt + "稳定持有定投中"
+                else if judge == "MA2500":
+                    tilt = tilt + "准备到*1.2线停止定投"
+                    else if judge =="*1.2":
+                        tilt = tilt + "终止定投，随时准备跑路"
+                
+               
         print(tilt)
         #GENERATE TITLE
         # 斜杠用来代码换行
