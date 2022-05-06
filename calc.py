@@ -62,9 +62,9 @@ def main():
             if judge =="÷1.2":
                 tilt = tilt + "，稳定持有定投中"
             elif judge == "MA2500":
-                tilt = tilt + "，准备到*1.2线停止定投"
+                tilt = tilt + "，不用操作"
             else:
-                tilt = tilt + "，终止定投，随时准备跑路"
+                tilt = tilt + "，终止已有定投，随时准备跑路"
 
                
         print(tilt)
