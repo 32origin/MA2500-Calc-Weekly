@@ -50,7 +50,7 @@ def main():
         print(close_today)
         #
         if(close_today<=MAdiv):
-            tilt="今日沪指低于÷1.2线"
+            tilt="今日沪指低于÷1.2线,直接梭哈等着收菜就完事了"
         else:
             if(close_today<=MA2500):
                 judge="÷1.2"
