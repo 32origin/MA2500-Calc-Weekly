@@ -50,8 +50,7 @@ def main():
         print(close_today)
         #
         if(close_today<=MAdiv):
-            tilt="今日指数低于÷1.2线,直接梭哈等着收菜就完事了"
-            
+            tilt="今日指数低于÷1.2线,直接梭哈等着收菜就完事了"       
         else:
             if(close_today<=MA2500):
                 judge="÷1.2"
@@ -62,8 +61,6 @@ def main():
             tilt="今日指数高于"+judge+"线"
             if judge =="÷1.2":
                 tilt = tilt + "，准备买入或稳定持有定投"
-                
-                send_server(tilt,cont) #插入在需要推送的地方，我这里的"Her said"是我的标题，msg是我前面爬取的消息'''
             elif judge == "MA2500":
                 tilt = tilt + "，不用操作，静观其变"
             else:
